@@ -1,0 +1,1 @@
+A PSR-3 compatible WordPress logger using WP_Debug

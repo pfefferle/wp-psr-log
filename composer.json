@@ -1,0 +1,19 @@
+{
+    "name": "wppsr/log",
+    "description": "A PSR-3 compatible WordPress logger using WP_Error",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matthias Pfefferle"
+        }
+    ],
+    "require": {
+        "psr/log": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "WPPSR\\Log\\": "src"
+        }
+    }
+}
