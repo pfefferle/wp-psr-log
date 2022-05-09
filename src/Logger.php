@@ -2,6 +2,8 @@
 
 namespace WPPSR\Log;
 
+use Psr\Log\AbstractLogger;
+
 class Logger extends AbstractLogger
 {
     /**
@@ -12,8 +14,6 @@ class Logger extends AbstractLogger
      * @param array $context
      *
      * @return void
-     *
-     * @throws \Psr\Log\InvalidArgumentException
      */
     public function log($level, string $message, array $context = [])
     {
