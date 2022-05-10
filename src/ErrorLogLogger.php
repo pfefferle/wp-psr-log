@@ -4,7 +4,7 @@ namespace WPPSR\Log;
 
 use Psr\Log\AbstractLogger;
 
-class Logger extends AbstractLogger
+class ErrorLogLogger extends AbstractLogger
 {
     /**
      * Logs with an arbitrary level.
