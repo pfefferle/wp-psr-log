@@ -17,6 +17,17 @@ class Logger extends AbstractLogger
      */
     public function log($level, string $message, array $context = [])
     {
-        new WP_Error($level, $message, $context);
+        if (defined('WP_DEBUG') && WP_DEBUG) {
+            if (defined('WP_DEBUG_LOG') && WP_DEBUG_LOG) {
+                error_log(
+                    sprintf(
+                        '%s: %s. Details: %s',
+                        $level,
+                        trim( $message, '.' ),
+                        json_encode( $context )
+                    )
+                );
+            }
+        }
     }
 }

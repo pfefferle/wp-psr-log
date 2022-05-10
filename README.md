@@ -1,1 +1,1 @@
-A PSR-3 compatible WordPress logger using WP_Debug
+A PSR-3 compatible WordPress logger using `WP_DEBUG(_LOG)` in combination with `error_log`
